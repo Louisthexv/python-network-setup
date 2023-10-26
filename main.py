@@ -10,12 +10,15 @@ def generate_random_ip(network_class):
         ip = f"192.168.{random.randint(0, 255)}.1/24"
     else:
         return "Invalid network class"
+    return ip  # Return the generated IP
 
 # Prompt the user for the network class
 network_class = input("Choose a network class (A, B, C): ").upper()
 
-# Generate and print a random IP address
+# Generate a random IP address
 random_ip = generate_random_ip(network_class)
+
+# Check if the network class is valid
 if random_ip != "Invalid network class":
     print(f"Random {network_class} IP Address: {random_ip}")
 else:
