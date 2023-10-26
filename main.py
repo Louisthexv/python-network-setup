@@ -24,5 +24,7 @@ else:
     print("Invalid network class chosen.")
 
 print("This tool is currently developed for the Linux environment.")
+
 print("macOS and Windows versions will be available in the future.")
+
 print("Thank you for your understanding.")
