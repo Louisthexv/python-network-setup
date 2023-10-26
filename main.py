@@ -3,15 +3,13 @@ import random
 # Function to generate a random IP address in the specified class
 def generate_random_ip(network_class):
     if network_class == 'A':
-        ip = f"10.{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(1, 254)}"
+        ip = f"10.{random.randint(0, 255)}.{random.randint(0, 255)}.1/24"
     elif network_class == 'B':
-        ip = f"172.{random.randint(16, 31)}.{random.randint(0, 255)}.{random.randint(1, 254)}"
+        ip = f"172.{random.randint(16, 31)}.{random.randint(0, 255)}.1/24"
     elif network_class == 'C':
-        ip = f"192.168.{random.randint(0, 255)}.{random.randint(1, 254)}"
+        ip = f"192.168.{random.randint(0, 255)}.1/24"
     else:
         return "Invalid network class"
-    
-    return ip
 
 # Prompt the user for the network class
 network_class = input("Choose a network class (A, B, C): ").upper()
