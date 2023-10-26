@@ -26,4 +26,4 @@ else:
 
 print("\nThis tool is currently developed for the Linux environment.")
 print("macOS and Windows versions will be available in the future.")
-print("Thank you for your understanding.")
+print("\nThank you for your understanding.")
